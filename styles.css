@@ -1,0 +1,402 @@
+/* CSS BY Jonathan Nunez */
+
+/* IMPORTED FONTS url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+  --color-midnight-blue: #1f2a44;
+  --color-olive-green: #76885b;
+  --color-champagne-gold: #e5c185;
+  --color-linen: #f8f4ec;
+  --color-dark-charcoal: #2b2b2b;
+  --color-soft-white: #faf9f6;
+  --font-playfair-display: "Playfair Display", serif;
+}
+
+/* GLOBAL STYLES  */
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-playfair-display);
+  color: var(--color-dark-charcoal);
+}
+
+header {
+  background-color: var(--color-midnight-blue);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  color: var(--color-soft-white);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: var(--color-soft-white);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--color-midnight-blue);
+}
+
+h2,
+h3 {
+  font-size: 2em;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+p,
+h2,
+h3,
+li {
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* End of base fonts and sizes. Start of specific CSS*/
+
+header div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header div img {
+  width: 50%;
+}
+
+header div p {
+  font-size: 1.55em;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+header nav {
+  background-color: var(--color-champagne-gold);
+  display: flex;
+  padding: 16px 0;
+}
+
+header nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+header nav ul a {
+  color: var(--color-midnight-blue);
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px 25px;
+}
+
+#welcome h2 {
+  margin-top: 30px;
+}
+
+.section-divider {
+  height: 2.6px;
+  width: 100%;
+  background-color: var(--color-champagne-gold);
+  margin: 10px 0;
+}
+
+#ourOfferings .container div {
+  background-color: var(--color-olive-green);
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 14px;
+}
+
+#ourOfferings h3,
+#ourOfferings p,
+#ourOfferings ul li {
+  color: var(--color-soft-white);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+#ourOfferings h3 {
+  margin-top: 8px;
+}
+
+#ourOfferings ul {
+  padding: 0 20px;
+}
+
+#ourOfferings ul li {
+  list-style: disc;
+}
+
+#gallery .card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(50, 50, 50, 0.546);
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+#gallery .card p {
+  text-align: center;
+  font-style: italic;
+  margin: 10px auto;
+}
+
+#gallery .btn {
+  padding: 20px;
+  background-color: var(--color-olive-green);
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#gallery .btn a {
+  color: var(--color-soft-white);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: var(--color-midnight-blue);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer address {
+  margin-top: 65px;
+}
+
+footer address p:nth-child(1),
+footer address p:nth-child(2) a,
+footer address p:nth-child(2) {
+  color: var(--color-soft-white);
+  margin: 0;
+}
+
+footer address p:nth-child(3),
+footer .social-media {
+  margin-bottom: 50px;
+}
+
+footer address p:nth-child(3) a,
+footer .social-media a {
+  color: var(--color-champagne-gold);
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) {
+  #ourOfferings .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  #ourOfferings .container .artisan-prov {
+    grid-column: 1;
+  }
+
+  #ourOfferings .container .exclusive-dining {
+    grid-column: 2;
+  }
+
+  #ourOfferings .container .ff-monthly-basket {
+    grid-column: 1 / -1;
+  }
+
+  #gallery .container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%; /* used percentages and flex container just in case there were more items to be added*/
+    margin: 0 auto;
+  }
+
+  #gallery .container .card {
+    flex-basis: 49%;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 900px) {
+  #gallery .container .card {
+    flex-basis: 32%; /* Same. I feel using a grid would make adding other cards simpler instead of changing Grid columns*/
+  }
+}
+
+/* XL screens */
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #gallery .container .card {
+    flex-basis: 18.4%; /* Same. just played with the percentages in browser dev tools*/
+  }
+}
